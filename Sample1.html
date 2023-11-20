@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title> First </title>
+    </head>
+
+    <body>
+        <p id="p-id"> Hello World</p>
+        <button onclick="change()"> Change </button>
+    </body>
+    
+    <script>
+        var p = document.getElementById('p-id');
+        console.log(p)              
+        console.log(p.textContent);
+        
+        function change() {
+            p.textContent = "Hello Programmer";
+        }
+    </script>
+</html>

@@ -1,0 +1,12 @@
+<button onclick="repeat()"> Repeat </button>
+<div id="div"></div>
+
+<script>
+    var div = document.getElementById('div');
+
+    function repeat() {
+        var myTag = document.createElement('h1');
+        myTag.textContent = "Hello";
+        div.append(myTag);
+    }
+</script>

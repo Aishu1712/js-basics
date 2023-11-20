@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title> Guess Number </title>
+    </head>
+
+    <body>
+        <h3> Enter a number </h3>
+        <input id="in">
+        <button onclick="check()"> Check </button>
+        <p id="check"> Checking... </p>
+
+    </body>
+
+    <script>
+
+        var computerNumber = Math.floor(Math.random()*10) + 1;
+        console.log("Generated value : " + computerNumber);
+
+        function check() {
+            var guessNumber = document.getElementById('in');
+            var input = guessNumber.value;
+
+            var p = document.getElementById('check');
+
+            if (input == computerNumber) {
+                p.textContent = "Correct";
+                alert("PERFECT GUESS 😍");
+            }
+                
+            else p.textContent = "Wrong";
+        }
+    </script>
+</html>
